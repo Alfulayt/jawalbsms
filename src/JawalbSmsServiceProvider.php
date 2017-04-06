@@ -1,6 +1,6 @@
 <?php
 
-namespace abdualrhmanIO\JawalbSms;
+namespace abdualrhmanio\jawalbsms;
 
 use Illuminate\Support\ServiceProvider;
 
