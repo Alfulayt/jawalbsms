@@ -19,7 +19,7 @@ Then, update `config/app.php` by adding an entry for the service provider.
 ```php
 'providers' => [
 	// ...
-	abdualrhmanio\jawalbsms\JawalbSmsServiceProvider::class
+	abdualrhmanIO\JawalbSms\JawalbSmsServiceProvider::class
 ];
 ```
 
@@ -29,7 +29,7 @@ Then, register class alias by adding an entry in aliases section
 ```php
 'aliases' => [
 	// ...
-	'jawalbsms' => abdualrhmanio\jawalbsms\JawalbSmsFacade::class
+	'jawalbsms' => abdualrhmanIO\JawalbSms\JawalbSmsFacade::class
 ];
 ```
 
