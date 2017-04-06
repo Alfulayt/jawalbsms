@@ -54,7 +54,7 @@ You need to fill in `jawalbsms.php` file that is found in your applications `con
 
 ### Sending a SMS To Specific Number
 
-You can easily send a message to all registered users with the command
+You can easily send a SMS to Specific Number with the command
 
     \jawalbsms::sendSMS("Some Message","PhoneNumber");
 
