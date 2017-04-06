@@ -52,7 +52,7 @@ You need to fill in `jawalbsms.php` file that is found in your applications `con
 
 ## Usage
 
-### Sending a Notification To All Users
+### Sending a SMS To Specific Number
 
 You can easily send a message to all registered users with the command
 
