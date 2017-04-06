@@ -1,6 +1,6 @@
 <?php
 
-namespace AbdualrhmanIO\JawalbSms;
+namespace Abdualrhmanio\JawalbSms;
 
 use GuzzleHttp\Client;
 
