@@ -1,6 +1,6 @@
 <?php
 
-namespace abdualrhmanIO\JawalbSms;
+namespace abdualrhmanio\jawalbsms;
 
 use GuzzleHttp\Client;
 
@@ -10,9 +10,9 @@ class JawalbSmsClient
 
     private $client;
     private $headers;
-    private $username ; //$appId;
-    private $password ; //$restApiKey;
-    private $senderName; //$userAuthKey;
+    private $username ;
+    private $password ;
+    private $senderName;
     private $additionalParams;
     public $configs;
 
@@ -45,6 +45,7 @@ class JawalbSmsClient
               'user' => $this->username,
               'pass' => $this->password,
               'to'   => $to,
+              'unicode' => 'u',
               'message' => $message,
               'sender' => $this->senderName
             ]
