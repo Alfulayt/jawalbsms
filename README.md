@@ -19,7 +19,7 @@ Then, update `config/app.php` by adding an entry for the service provider.
 ```php
 'providers' => [
 	// ...
-	abdualrhmanIO\JawalbSms\JawalbSmsServiceProvider::class
+	Abdualrhmanio\JawalbSms\JawalbSmsServiceProvider::class
 ];
 ```
 
@@ -29,7 +29,7 @@ Then, register class alias by adding an entry in aliases section
 ```php
 'aliases' => [
 	// ...
-	'jawalbsms' => abdualrhmanIO\JawalbSms\JawalbSmsFacade::class
+	'jawalbsms' => Abdualrhmanio\JawalbSms\JawalbSmsFacade::class
 ];
 ```
 
@@ -56,7 +56,7 @@ You need to fill in `jawalbsms.php` file that is found in your applications `con
 
 You can easily send a message to all registered users with the command
 
-    jawalbsms::sendSMS("Some Message","PhoneNumber");
+    \jawalbsms::sendSMS("Some Message","PhoneNumber");
 
     
 
