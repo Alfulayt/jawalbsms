@@ -34,13 +34,13 @@ Then, register class alias by adding an entry in aliases section
 ```
 
 
-Finally, from the command line again, run 
+Finally, from the command line again, run
 
 ```
 php artisan vendor:publish --tag=config
-``` 
+```
 
-to publish the default configuration file. 
+to publish the default configuration file.
 This will publish a configuration file named `jawalbsms.php` which includes your OneSignal authorization keys.
 
 > **Note:** If the previous command does not publish the config file successfully, please check the steps involving *providers* and *aliases* in the `config/app.php` file.
@@ -54,10 +54,6 @@ You need to fill in `jawalbsms.php` file that is found in your applications `con
 
 ### Sending a SMS To Specific Number
 
-You can easily send a message to all registered users with the command
+You can easily send a SMS to Specific Number with the command
 
     \jawalbsms::sendSMS("Some Message","PhoneNumber");
-
-    
-
-    
