@@ -40,7 +40,7 @@ class JawalbSmsClient
       }
 
 
-        $res =  $this->client->get(self::API_URL,['query' =>
+      return $this->client->get(self::API_URL,['query' =>
             [
               'user' => $this->username,
               'pass' => $this->password,
@@ -51,48 +51,47 @@ class JawalbSmsClient
             ]
          ]);
 
-         return $this->serializeResponse($res->getBody());
     }
 
-    
-
-    public function serializeResponse($body) {
-        switch ($body) {
-          case '-100':
-              return "Missing parameters (not exist or empty) Username + password." ;
-            break;
-          case '-110':
-                return "Account not exist (wrong username or password)." ;
-            break;
-          case '-111':
-              return "The account not activated." ;
-            break;
-          case '-112':
-                return "Blocked account." ;
-            break;
-            case '-113':
-              return "Not enough balance." ;
-            break;
-          case '-114':
-                return "The service not available for now." ;
-            break;
-          case '-115':
-              return "The sender not available (if user have no opened sender)." ;
-            break;
-          case '-116':
-                return "Invalid sender name" ;
-            break;
-          case '-120':
-                  return "No destination addresses, or all destinations are not correct" ;
-            break;
-
-          default:
-                 return "unknown Error !";
-            break;
-        }
 
 
-    }
+    // public function serializeResponse($body) {
+    //     switch ($body) {
+    //       case '-100':
+    //           return "Missing parameters (not exist or empty) Username + password." ;
+    //         break;
+    //       case '-110':
+    //             return "Account not exist (wrong username or password)." ;
+    //         break;
+    //       case '-111':
+    //           return "The account not activated." ;
+    //         break;
+    //       case '-112':
+    //             return "Blocked account." ;
+    //         break;
+    //         case '-113':
+    //           return "Not enough balance." ;
+    //         break;
+    //       case '-114':
+    //             return "The service not available for now." ;
+    //         break;
+    //       case '-115':
+    //           return "The sender not available (if user have no opened sender)." ;
+    //         break;
+    //       case '-116':
+    //             return "Invalid sender name" ;
+    //         break;
+    //       case '-120':
+    //               return "No destination addresses, or all destinations are not correct" ;
+    //         break;
+    //
+    //       default:
+    //              return "unknown Error !";
+    //         break;
+    //     }
+    //
+    //
+    // }
 
 
 }
