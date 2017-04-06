@@ -1,6 +1,6 @@
 <?php
 
-namespace Abdualrhmanio\jawalbsms;
+namespace AbdualrhmanIO\JawalbSms;
 
 
 use Illuminate\Support\Facades\Facade;

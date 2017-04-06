@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Abdualrhmanio\\JawalbSms\\": "src/"
+      "AbdualrhmanIO\\JawalbSms\\": "src/"
     }
   },
   "license": "MIT",
