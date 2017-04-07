@@ -41,7 +41,7 @@ php artisan vendor:publish --tag=config
 ``` 
 
 to publish the default configuration file. 
-This will publish a configuration file named `jawalbsms.php` which includes your OneSignal authorization keys.
+This will publish a configuration file named `jawalbsms.php` which includes your jawalbsms App Credentials.
 
 > **Note:** If the previous command does not publish the config file successfully, please check the steps involving *providers* and *aliases* in the `config/app.php` file.
 
