@@ -1,4 +1,4 @@
-# JawalbSms SMS Sender [jawalbsms.ws](http://www.jawalbsms.ws/)  Wrapper for Laravel 5
+# JawalbSms SMS Sender [jawalbsms.ws](http://www.jawalbsms.ws/)  Wrapper for Laravel 9
 
 ## Introduction
 ...
