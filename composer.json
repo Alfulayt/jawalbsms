@@ -1,16 +1,29 @@
 {
   "name": "abdualrhmanio/jawalbsms",
   "description": "JawalbSms SMS Sender Wrapper Laravel",
-  "keywords": ["JawalbSms", "SMS", "Sender", "laravel", "laravel 5"],
+  "keywords": [
+    "JawalbSms",
+    "SMS",
+    "Sender",
+    "laravel",
+    "laravel 5"
+  ],
   "type": "library",
   "require": {
-    "php": ">=5.4.0",
-    "guzzlehttp/guzzle": "^6.2",
-    "illuminate/support": "4.*|5.*"
+    "php": "^8.0.2",
+    "guzzlehttp/guzzle": "^7.2",
+    "illuminate/support": "^9.0"
   },
   "autoload": {
     "psr-4": {
       "Abdualrhmanio\\JawalbSms\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Abdualrhmanio\\JawalbSms\\JawalbSmsServiceProvider"
+      ]
     }
   },
   "license": "MIT",
