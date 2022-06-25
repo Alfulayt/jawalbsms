@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 
 class JawalbSmsClient
 {
-    const API_URL = "http://www.jawalbsms.ws/api.php/sendsms";
+    const API_URL = "https://www.jawalbsms.ws/api.php/sendsms";
 
     private $client;
     private $headers;
